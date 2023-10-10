@@ -41,10 +41,10 @@ const tipSchema = new Schema(
     toJSON: {
       virtuals: true,
     },
-    id: false,
+    // id: false,
   }
 );
 
-const Journal = model("Tip", tipSchema);
+const Tip = model("Tip", tipSchema);
 
 module.exports = Tip;
