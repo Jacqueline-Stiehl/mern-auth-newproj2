@@ -7,6 +7,11 @@ const tipSchema = new Schema(
       required: true,
     },
 
+    text: {
+      type: String,
+      required: true,
+    },
+
     upvote: {
       type: integer,
     },
