@@ -2,26 +2,26 @@ const { Schema, model, Types, ObjectId } = require("mongoose");
 
 const tipSchema = new Schema(
   {
-    topic: {
+    title: {
       type: String,
       required: true,
     },
 
-    text: {
+    content: {
       type: String,
       required: true,
     },
 
     upvote: {
-      type: integer,
+      type: Number,
     },
 
     downvote: {
-      type: integer,
+      type: Number,
     },
 
     isActive: {
-      type: boolean,
+      type: Boolean,
       default: true,
       required: true,
     },
@@ -32,6 +32,7 @@ const tipSchema = new Schema(
         ref: "User",
       },
     ],
+
     // dateCreated: {
     //   type: Date,
     //   default: Date.now
